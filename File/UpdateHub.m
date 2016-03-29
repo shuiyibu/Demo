@@ -40,7 +40,7 @@ function [hubs]=UpdateHub( dataSet,dataSetName,NNN ,errorHubs)
            
            X=error(:,k);           
            mean=sum(X)/(j-1);
-           var=sum((X-mean).^2)/(j-1)+eps;
+           var=sqrt(sum((X-mean).^2)/(j-1)+eps);
            err(1,k)=mean;
            err(2,k)=var;
            wt(:,k)=exp(-(X-mean)/var);

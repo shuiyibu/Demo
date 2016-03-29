@@ -1,4 +1,4 @@
-function  [K,k_ocurrenceSort, k_ocurrenceIndexSort,NNN,W ]=NN( dataSet,dataSetName,type )
+function  [K,k_ocurrence,k_ocurrenceSort, k_ocurrenceIndexSort,NNN,W ]=NN( dataSet,dataSetName,type )
     
     fprintf('Nearest Neighbor Begin...\n');
 
